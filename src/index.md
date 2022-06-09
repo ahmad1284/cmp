@@ -6,4 +6,17 @@ metaDescription:
 templateEngineOverride: njk
 ---
 
-yolo
+<section>
+  <ul class="grid">
+  {% for key, profile in profiles %}
+    <li class="grid__item">
+      <div class="grid__itemImgWrapper">
+        <img src="/images/{{ key }}.png" alt="{{ profile.name }}" />
+      </div>
+        <h3>{{ profile.name }}</h3>
+        <p>{{ profile.title }}</p>
+    </li>
+  {% endfor %}
+</section>
+
+<!-- "Space Grotesk", sans-serif -->
