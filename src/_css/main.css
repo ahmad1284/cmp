@@ -73,7 +73,6 @@ img {
 }
 
 .grid__itemImgWrapper {
-  height: 20rem;
   overflow: hidden;
   margin-bottom: 1rem;
 }
